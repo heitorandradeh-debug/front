@@ -1,16 +1,17 @@
-const inputUpload = document.getElementById('meu-upload')
+const inputUpload = document.getElementById('foto')
 
-inputUpload.addEventListener('change', function(evento) {  
+inputUpload.addEventListener('change', function(event) {  
 
-    const arquivo = evento.target.files[0]
+    const arquivo = event.target.files[0]
 
     if (arquivo) {
-        const nomeDaImagem = arquivo.nomeDaImagem
+        const nomeDaImagem = arquivo.name
         console.log(nomeDaImagem)
     } else {
         console.log("Nenhum arquivo selecionado.");
     }
 });
+
 const nome = document.getElementById("nome")
 
 const button = document.getElementById("btn")
